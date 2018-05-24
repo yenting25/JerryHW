@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p>輸入成績:<br><input  id="a" type="text" /><br>
+
+<p><button onclick="abc()">提交</button></p>
+
+
+<output  id="result"></output>
+
+<script>
+function abc(){
+    if(document.getElementById("a").value<60){document.getElementById("result").value="不及格~";}
+    else if(59<document.getElementById("a").value){document.getElementById("result").value="讚唷!";}
+    else{document.getElementById("result").value="重新輸入!!";document.getElementById("a").value="";}
+    
+}
+
+
+</script>
+
+</body>
+</html>

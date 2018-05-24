@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p>第一個數字:<br><input  id="a" type="text" /><br>
+第二個數字:<br><input  id="b" type="text" /></p>
+
+<p><button onclick="allclear()">AC</button>
+<button onclick="a_dd()">+</button>
+<button type="button" class="button" id="banana" onClick="m_inus();"> - </button>
+<button type="button" class="button" id="apple" onClick="c_ross();"> * </button>
+<button type="button" class="button" id="tomato" onClick="d_iv();"> / </button></p>
+
+
+<output  id="result"></output>
+
+<script>
+function allclear(){
+    document.getElementById("a").value="";
+    document.getElementById("b").value="";
+    document.getElementById("result").value="";
+}
+function a_dd() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a+b ;
+}
+function m_inus() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a-b ;
+}
+function c_ross() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a*b ;
+}
+function d_iv() {
+    var a = parseInt(document.getElementById('a').value);
+    var b = parseInt(document.getElementById('b').value);
+    document.getElementById('result').value =  a/b ;
+}
+
+</script>
+
+</body>
+</html>
